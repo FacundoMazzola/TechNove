@@ -48,7 +48,7 @@ export const products = [
         price: 17999,
         category: "perifericos",
         image: modpadHyperex,
-        description: "Joystick ergonómico compatible con PC y consolas.",
+        description: "Modpad para PC.",
         stock: 7
     }
 ];
