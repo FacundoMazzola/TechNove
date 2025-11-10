@@ -1,4 +1,9 @@
 // src/data/products.js
+import mouseG305 from '../assets/images/mouse-logitech-g305.webp';
+import tecladoKumara from '../assets/images/teclado-kumara-redragon.webp';
+import auricularesRazer from '../assets/images/auriculares-razer.webp';
+import monitorSamsung from '../assets/images/monitor-samsung-odisea.webp';
+import modpadHyperex from '../assets/images/modpad-hyperex.webp';
 
 export const products = [
     {
@@ -6,7 +11,7 @@ export const products = [
         title: "Mouse Logitech G305",
         price: 29999,
         category: "perifericos",
-        image: "/assets/mouse-logitech-g305.webp",
+        image: mouseG305,
         description: "Mouse gamer inalámbrico con sensor HERO y diseño ergonómico.",
         stock: 10
     },
@@ -15,7 +20,7 @@ export const products = [
         title: "Teclado Redragon Kumara",
         price: 25999,
         category: "perifericos",
-        image: "/assets/teclado-kumara-redragon.webp",
+        image: tecladoKumara,
         description: "Teclado mecánico compacto con switches Redragon Blue.",
         stock: 8
     },
@@ -24,7 +29,7 @@ export const products = [
         title: "Auriculares Razer Kraken",
         price: 39999,
         category: "audio",
-        image: "/assets/auriculares-razer.webp",
+        image: auricularesRazer,
         description: "Auriculares gaming con sonido envolvente y micrófono retráctil.",
         stock: 6
     },
@@ -33,7 +38,7 @@ export const products = [
         title: "Monitor Samsung Odyssey",
         price: 199999,
         category: "monitores",
-        image: "/assets/monitor-samsung-odisea.webp",
+        image: monitorSamsung,
         description: "Monitor curvo QHD de 27 pulgadas con 144 Hz.",
         stock: 4
     },
@@ -42,7 +47,7 @@ export const products = [
         title: "Joystick HyperEX Modpad",
         price: 17999,
         category: "perifericos",
-        image: "/assets/modpad-hyperex.webp",
+        image: modpadHyperex,
         description: "Joystick ergonómico compatible con PC y consolas.",
         stock: 7
     }
