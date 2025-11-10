@@ -1,9 +1,9 @@
 // src/data/products.js
-import mouseG305 from '../assets/images/mouse-logitech-g305.webp';
-import tecladoKumara from '../assets/images/teclado-kumara-redragon.webp';
-import auricularesRazer from '../assets/images/auriculares-razer.webp';
-import monitorSamsung from '../assets/images/monitor-samsung-odisea.webp';
-import modpadHyperex from '../assets/images/modpad-hyperex.webp';
+import mouseG305 from '../assets/image/mouse-logitech-g305.webp';
+import tecladoKumara from '../assets/image/teclado-kumara-redragon.webp';
+import auricularesRazer from '../assets/image/auriculares-razer.webp';
+import monitorSamsung from '../assets/image/monitor-samsung-odisea.webp';
+import modpadHyperex from '../assets/image/modpad-hyperex.webp';
 
 export const products = [
     {
