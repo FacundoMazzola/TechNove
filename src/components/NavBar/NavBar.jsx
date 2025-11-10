@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
-import { ShoppingCart, Menu, X } from 'lucide-react'; // npm install lucide-react
+import { ShoppingCart, Menu, X } from 'lucide-react';
 
 const NavBar = () => {
     const { cart } = useCart();

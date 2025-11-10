@@ -1,16 +1,47 @@
-# React + Vite
+# ⚡ TechNove — E-Commerce React + Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TechNove es una tienda online desarrollada con **React**, **Vite** y **Firebase**, que permite visualizar productos, agregarlos al carrito y finalizar compras en línea.  
+El proyecto fue diseñado con un enfoque moderno, intuitivo y responsivo, manteniendo buenas prácticas de desarrollo frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características principales
 
-## React Compiler
+✅ **Catálogo dinámico** de productos. 
+✅ **Carrito de compras** con almacenamiento persistente.  
+✅ **Resumen de pedido y checkout funcional.**  
+✅ **Diseño responsive y minimalista**, adaptado a móviles.  
+✅ Navegación rápida con **React Router DOM**.  
+✅ Integración con **Firestore** para registrar órdenes.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧱 Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Categoría | Herramienta / Librería |
+|------------|-------------------------|
+| Framework principal | [React](https://react.dev/) |
+| Bundler | [Vite](https://vitejs.dev/) |
+| Estilos | CSS inline / Tailwind opcional |
+| Enrutamiento | [React Router DOM](https://reactrouter.com/) |
+| Base de datos y backend | [Firebase Firestore](https://firebase.google.com/) |
+| Íconos modernos | [Lucide React](https://lucide.dev/icons/) |
+
+---
+
+## ⚙️ Instalación y ejecución
+
+Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/technove.git
+
+# Ingresar al directorio
+cd technove
+
+# Instalar dependencias
+npm install
+
+# Ejecutar el proyecto en modo desarrollo
+npm run dev
