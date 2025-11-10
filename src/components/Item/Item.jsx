@@ -1,41 +1,43 @@
 // src/containers/ItemListContainer/Item.jsx
-import { Link, useNavigate } from 'react-router-dom'; // 👈 Agrega useNavigate
-// ❗️ IMPORTANTE: Reemplaza './CartContext' con la ruta real a tu archivo de contexto
-import { useCartContext } from '../../context/CartContext'; 
+import { Link, useNavigate } from 'react-router-dom';
+import { useCart } from '../../context/CartContext';
 
 const Item = ({ product }) => {
     // Inicializa los hooks:
     const navigate = useNavigate();
-    const { addItem } = useCartContext(); // Asume que tienes un hook para tu contexto
+    const { addToCart } = useCart();
 
     // FUNCIÓN QUE MANEJA LA COMPRA Y REDIRECCIÓN
     const handleAddToCart = () => {
-        // 1. AGREGA el producto al carrito (cantidad por defecto 1)
-        addItem(product, 1); 
+        // 1. AGREGA el producto al carrito. La función de tu contexto solo pide 1 argumento (item)
+        addToCart(product); // ⚠️ Solo pasamos 'product'
 
         // 2. REDIRIGE al usuario a la vista del carrito
-        navigate('/cart'); 
+        navigate('/cart');
     };
 
-    return (
-        <div style={styles.card}>
-            {/* ... (código anterior) ... */}
-            <p style={styles.description}>{product.description}</p>
+    // ...
+    // El resto del componente está correcto, incluyendo onClick={handleAddToCart}
 
-            <div style={styles.buttons}>
-                <Link to={`/item/${product.id}`} style={styles.detailButton}>
-                    Ver Detalle
-                </Link>
-                {/* 3. ASIGNA la función handleAddToCart al botón */}
-                <button 
-                    style={styles.buyButton} 
-                    onClick={handleAddToCart} // 👈 ¡CLAVE!
-                >
-                    🛒 Comprar (ir al carrito)
-                </button>
-            </div>
+return (
+    <div style={styles.card}>
+        {/* ... (código anterior) ... */}
+        <p style={styles.description}>{product.description}</p>
+
+        <div style={styles.buttons}>
+            <Link to={`/item/${product.id}`} style={styles.detailButton}>
+                Ver Detalle
+            </Link>
+            {/* 3. ASIGNA la función handleAddToCart al botón */}
+            <button
+                style={styles.buyButton}
+                onClick={handleAddToCart} // 👈 ¡CLAVE!
+            >
+                🛒 Comprar (ir al carrito)
+            </button>
         </div>
-    );
+    </div>
+);
 };
 
 const styles = {
